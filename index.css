@@ -1,0 +1,85 @@
+    .container {
+        border: solid black 1px;
+        width: 400px;
+        height: 500px;
+        background-color: lightblue;
+    }
+    
+    .head {
+        text-align: center;
+        margin: 0px;
+        font-size: 25px;
+        height: 100px;
+        background-color: burlywood;
+    }
+    
+    ul {}
+    
+    ul li {
+        cursor: pointer;
+        position: relative;
+        background: #eee;
+        font-size: 18px;
+        transition: 0.2s;
+    }
+    
+    ul li:nth-child(odd) {
+        background: lightgrey;
+    }
+    
+    ul li.checked {
+        background: #888;
+        color: #fff;
+        text-decoration: line-through;
+    }
+    
+    ul li.checked::before {
+        content: '';
+        position: absolute;
+        border-color: #fff;
+        border-style: solid;
+        border-width: 0 2px 2px 0;
+        top: 10px;
+        left: 16px;
+        transform: rotate(45deg);
+        height: 15px;
+        width: 7px;
+    }
+    
+    .close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 0;
+    }
+    
+    ul li.hover {
+        background: blue;
+    }
+    
+    input {
+        margin: 5px;
+        border: none;
+        border-radius: 5;
+        width: 70%;
+        padding: 10px;
+        float: left;
+        font-size: 16px;
+    }
+    
+    .Btn {
+        padding: 10px;
+        width: 15%;
+        background: #d9d9d9;
+        color: #555;
+        float: left;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+        border-radius: 0;
+    }
+    
+    .Btn:hover {
+        background-color: blueviolet;
+    }
